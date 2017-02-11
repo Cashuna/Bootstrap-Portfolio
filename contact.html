@@ -1,62 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<!--script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script -->
-	<link rel="stylesheet" type="text/css" href="asset/css/styles.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/styles_bstrap.css">
+
 	<title>Send A Message</title>
 </head>
 <body>
-	<header>
-	<!-- Only Portfolio opens a new page -->
-		<h1 class="namestyle">Cashuna Marshall</h1>
-		<table>
-			<tr>
-				<td><a href="Student_Bio.html">About</a></td>
-				<td><a href="portfolio.html" target="_blank">Portfolio</a></td>
-				<td class="tborder"><a href="#header">Contact</a></td>
-			</tr>
-		</table>
-	</header>
-
-	<!-- The following parent contains two children elements about me and connect -->
-	<div>
-	
-		<!-- This div contains the form -->
-		<div class="aboutme bkgrnd">
-			<br>
-			<em>Contact</em>
-			<hr>
-			<p>
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+  	<div class="navbar-header">
+        <em class="navbar-brand namestyle">Cashuna Marshall</em>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+        	<li class="abt"><a href="student_bio-bootstrap.html">About</a></li>
+			<li class="folio"><a href="portfolio.html" target="_blank">Portfolio</a></li>
+			<li class="contact thirdborder"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  </div>
+</nav>
+<div class="container bkimage bottom">
+	<div class="row">
+ 		<div class="col-md-6 aboutme bkgrnd">
+ 			<p class="divider">Contact</p>
 			<form>
-				Your name:<br>
-				<input style="width: 25em;" type="text" name="yourname">
-				<br>
-				Subject:
-				<br>
-				<input style="width: 25em;" type="text" name="subject">
-				<br>
-				Send a message:<br>
-				<textarea style="width: 25em; height: 15em;"></textarea><br>
-				<!-- Find Out: use input from the above form and inserted into the button code below. -->
+  				<div class="form-group">
+    				<label for="exampleInputEmail1">Email address</label>
+    				<input class="form-control" id="disabledInput" type="text" placeholder="Use E-mail Me button below" disabled>
+  				</div>
+  				<div class="form-group">
+    				<label>Your Message</label>
+    				<textarea class="form-control" id="disabledInput" type="text"  rows="3" placeholder="Use E-mail Me below" disabled></textarea>
+  				</div>
+  
+  <!-- Find Out: use input from the above form and inserted into the button code below. -->
 				<button type="submit"><a href="mailto:cmarshallqa@gmail.com?subject=Let's%20Talk%20More:%20Viewed%20Your%20Portfolio&body=I'd%20like%20more%20information.%0AThank%20You,">E-mail me </a></button>
 			</form>
-			</p>
 		</div>
-		<!-- This section should sit to the right of the above div -->
-		<section class="connect bkgrnd">
-			<br>
-			<em>Connect Using:</em>
-			<hr>
-			<img class="icon" src="asset/images/stackoverflow.icns" alt="StackOverflow"><a href="https://stackoverflow.com"></a>
-			<img class="icon" src="asset/images/github.icns" alt="Portfolio"><a href="https://github.com/Cashuna/CM-Basic-Portfolio.git"></a>
-			<img class="icon" src="asset/images/linkedin_box.icns" alt="Linkedin"><a href="https://www.linkedin.com/pub/cashuna-marshall-ctal-ta"></a>
-			<span style="float: left; margin-left: 1em;">Links curentlly unavailable.</span>
-		</section>
+  		<div class="col-md-6 connect bkgrnd">
+			<p class="divider">Pending:</p>
+			
+			<img class="icon" src="images/stackOF.png" alt="StackOverflow"><a href="https://stackoverflow.com"></a>
+
+			<img class="icon" src="images/github.png" alt="Portfolio"><a href="https://github.com/Cashuna/CM-Basic-Portfolio.git"></a>
+
+			<img class="icon" src="images/linkedin.png" alt="Linkedin"><a href="https://www.linkedin.com/pub/cashuna-marshall-ctal-ta"></a>
+		</div>
 	</div>
-	<hr class="justaline">
-	<!-- This is the footer -->
-	<footer><br>
+</div>
+
+<!-- This is the footer -->
+<footer>
 		<small>&copy;Copyright 2017 Cashuna Marshall</small>
 	</footer>
 </body>

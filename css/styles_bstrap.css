@@ -1,0 +1,276 @@
+/* http://meyerweb.com/eric/tools/css/reset/v2.0|20110126 License: none (public domain) */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{ margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none;}
+table { border-collapse: collapse; border-spacing: 0;}
+
+
+/* General element styling */
+* {
+	font-family: sans-serif;
+	color: #777777;
+ }
+
+ .bkimage{
+	background: url("../images/bkimage.png");
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-top: 4px solid #cccccc;
+	/*overflow: auto;*/
+ }
+
+
+ p, form {
+	line-height: 16pt;
+	margin: .8em 1.5em 1.5em 1.5em;
+	text-orientation: justify;
+ }
+
+
+ header{
+	color: #ffffff;
+	min-height: 85px;
+	align-content: center;
+ }
+
+ li {
+	border-right: 2px solid #cccccc;
+	padding: 0 4px 0 0px;
+	font-size: 14pt;
+ }
+
+ /* End of general element styling */
+
+ /* Nav content styling begins
+
+  styling of name */
+ .namestyle {
+	font-family: Georgia;
+	background: #4aaaa5;
+	width: 200px;
+	height: 105px;
+	font-size: 32pt;
+	text-align: center;
+	color: #ffffff;
+ }
+
+  /* navigation bar styling */
+ .abt, .folio, .contact {
+	margin: 30px 7px 0 0;
+ }
+
+ /* Contact border styling in nav bar */
+ .thirdborder { /* third column border only */
+	border-right: none;
+ }
+
+ .bkgrnd {
+	background: #ffffff;
+ }
+ /* End of all header content stylings */
+
+ /* underline border for div titles*/
+ .divider {
+	font-size: 22pt;
+	color: #4aaaa5;
+	margin: .5em auto .1em 1em;
+	border-bottom: 2px solid #888;
+	padding-bottom: .2em;
+	width: 88%;
+
+ }
+
+ /* About me div */
+ .aboutme { /* content and div placement */
+	width: 400px;
+	margin: 40px 0 75px 70px;
+	float: left;
+	font-size: 14pt;
+	border-radius: 10px;
+
+ }
+
+ img { /* picture */
+	float: left;
+	margin: 1px 20px 0 0;
+	width: 90px;
+	height: 120px;
+	border: 0;
+ }
+ /* End of about me styling */
+
+ /* Begin styling Connect Using section*/
+ .connect { /* section placement */
+
+	width: 490px;
+	height: 200px;
+	margin: 40px 0 30px 90px;
+	border-radius: 10px;
+ }
+
+ .icon { /* content */
+	width: 120px;
+	height: 50px;
+	float: left;
+	margin: 2em .5em 0 1.3em;
+ }
+ /* End of all Connect Using styling */
+
+ .bottom {
+	border-bottom: 6px solid #4aaaa5;
+ }
+
+ /* Begin footer styling */
+ footer {
+	width: 100%;
+	background: #666666;
+	text-align: center;
+	height: 70px;
+	border-radius: 0 0 15px 15px;
+ }
+
+ small {
+	color: #ffffff;
+	margin-top: 5em;
+ }
+
+ /* End of footer styling */
+)
+/*--------------Begin media query styles-----------------*/
+
+@media screen and (max-width: 940px) {
+ 
+
+ div {
+ 	padding-bottom: 4em;
+	}
+
+ p {
+ 	height: 23px;
+	}
+ 
+
+ .namestyle {
+	margin-left: 180px;
+ 	}
+
+ .connect { /* section placement */
+	width: 50px;
+	margin: 40px 0 0 190px;
+	border-radius: 10px;
+	}
+ .aboutme { /* content and div placement */
+	width: 550px;
+	height: 300px;
+	margin-left: 180px;
+	padding-bottom: none;
+	}
+
+ .icon {
+ 	width: 140px;
+ 	margin: 1.5em 0 1.5em 1.5em;
+ 	}
+} 
+/*End of 940 query*/
+
+/* Begin 768 */
+@media screen and (max-width: 768px) {
+
+ body {
+ 	margin: 0 0 0 0;
+ 	}
+
+ h1{
+ 	margin-left: 60px;
+ 	}
+ .connect { /* section placement */
+	width: 510px;
+	margin-left: 60px;
+	border-radius: 10px;
+ 	}
+
+ .aboutme, .namestyle {
+ 	margin-left: 60px;
+ 	}
+
+ nav {
+ 	float: left;
+ 	padding-left: 30px;
+ 	}
+}
+/*End of 768 query*/
+
+/* Begin 640 query */
+@media screen and (max-width: 669px) {
+
+ body {
+ 	margin: 0 0 0 0;
+ 	}
+
+ h1 {
+ 	max-width: 668px;
+ 	}
+
+ p {
+ 	height: 20px;
+ 	}
+
+ nav {
+ 	float: left;
+ 	padding-left: 130px;
+ 	}
+
+ header {
+ 	min-height: 135px;
+ 	position: static;
+ 	}
+
+ li {
+ 	padding: 0 20px 0 10px;
+ 	}
+
+  .aboutme { /* section placement */
+	margin-left: 100px;
+	border-radius: 10px;
+	height: 300px;
+	width: 420px;
+ 	}
+
+ .connect { /* section placement */
+	margin-left: 100px;
+	border-radius: 10px;
+	height: 180px;
+	width: 420px;
+ 	}
+
+ .namestyle {
+ 	margin-left: 0;
+ 	width: 668px;
+ 	}
+
+ .icon {
+ 	width: 95px;
+ 	height: 60px;
+ 	margin: 2em 0 0 2em;
+ 	}
+
+ .divider {
+ 	width: 83%;
+ 	}
+
+ .abt, .folio, .contact {
+ 	margin: 10px 10px 0 0;
+ 	}
+}
+/*End of 669 query */
+/* End of all media styling and CSS file */
